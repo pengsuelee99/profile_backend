@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "E-commerce Platform",
+    "title_la": "ແພລັດຟອມອີຄອມເມີຊ",
+    "title_th": "แพลตฟอร์มอีคอมเมิร์ซ",
+    "title_en": "E-commerce Platform",
+    "description": "ລະບົບຂາຍສິນຄ້າອອນລາຍຄົບວົງຈອນ (Frontend: React/Tailwind, Backend: Python/Django).",
+    "description_la": "ລະບົບຂາຍສິນຄ້າອອນລາຍຄົບວົງຈອນ ທີ່ຮອງຮັບການຊຳລະເງິນ ແລະ ການຈັດການອໍເດີ (Frontend: React/Tailwind, Backend: Python/Django).",
+    "description_th": "ระบบขายสินค้าออนไลน์แบบครบวงจร ที่รองรับการชำระเงินและการจัดการออเดอร์ (Frontend: React/Tailwind, Backend: Python/Django).",
+    "description_en": "A comprehensive e-commerce system supporting payments and order management (Frontend: React/Tailwind, Backend: Python/Django).",
+    "tags": ["React", "Tailwind", "Python", "Django"],
+    "link": "#",
+    "status": "Completed (Private)",
+    "image": "/projects/project1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Translate Web App",
+    "title_la": "ເວັບແອັບແປພາສາ",
+    "title_th": "เว็บแอปแปลภาษา",
+    "title_en": "Translation Web App",
+    "description": "ເວັບໄຊທ໌ແປພາສາອັດສະລິຍະທີ່ເຮັດວຽກຮ່ວມກັນຢ່າງລື່ນໄຫຼລະຫວ່າງ React ແລະ Python Backend.",
+    "description_la": "ເວັບໄຊທ໌ແປພາສາອັດສະລິຍະທີ່ເຮັດວຽກຮ່ວມກັນຢ່າງລື່ນໄຫຼລະຫວ່າງ React ແລະ Python Backend.",
+    "description_th": "เว็บไซต์แปลภาษาอัจฉริยะที่ทำงานร่วมกันอย่างราบรื่นระหว่าง React และ Python Backend.",
+    "description_en": "An intelligent translation website working seamlessly between React and Python Backend.",
+    "tags": ["React.js", "Python", "API"],
+    "link": "https://github.com/pengsuelee99",
+    "status": "Developing",
+    "image": "/projects/project2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "AI Chatbot Service",
+    "title_la": "ບໍລິການ AI ແຊັດບອດ",
+    "title_th": "บริการ AI แชทบอท",
+    "title_en": "AI Chatbot Service",
+    "description": "ແຊັດບອດອັດສະລິຍະທີ່ພັດທະນາດ້ວຍ FastAPI ແລະ Streamlit ເພື່ອການໂຕ້ຕອບທີ່ວ່ອງໄວ.",
+    "description_la": "ແຊັດບອດອັດສະລິຍະທີ່ພັດທະນາດ້ວຍ FastAPI ແລະ Streamlit ເພື່ອການໂຕ້ຕອບທີ່ວ່ອງໄວ.",
+    "description_th": "แชทบอทอัจฉริยะที่พัฒนาด้วย FastAPI และ Streamlit เพื่อการโต้ตอบที่รวดเร็ว.",
+    "description_en": "An intelligent chatbot developed with FastAPI and Streamlit for fast interactions.",
+    "tags": ["FastAPI", "Streamlit", "Python"],
+    "link": "https://github.com/pengsuelee99",
+    "status": "Coming Soon",
+    "image": "/projects/project3.png"
+  }
+]
