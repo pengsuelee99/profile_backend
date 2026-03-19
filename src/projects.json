@@ -12,7 +12,7 @@
     "tags": ["React", "Tailwind", "Python", "Django"],
     "link": "#",
     "status": "Completed (Private)",
-    "image": "/projects/project1.jpg"
+    "image": "/projects/project1.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "tags": ["React.js", "Python", "API"],
     "link": "https://github.com/pengsuelee99",
     "status": "Developing",
-    "image": "/projects/project2.jpg"
+    "image": "/projects/project2.png"
   },
   {
     "id": 3,
