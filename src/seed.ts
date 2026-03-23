@@ -29,7 +29,9 @@ async function seedDatabase() {
       return;
     }
 
-    await mongoose.connect(MONGODB_URI);
+    await mongoose.connect(MONGODB_URI, {
+      serverSelectionTimeoutMS: 5000,
+    });
     console.log('✅ ເຊື່ອມຕໍ່ MongoDB ສຳເລັດແລ້ວ...');
 
     // ລຶບຂໍ້ມູນເກົ່າອອກກ່ອນ (ຖ້າມີ)

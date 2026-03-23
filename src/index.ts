@@ -3,6 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import nodemailer from 'nodemailer';
 import mongoose from 'mongoose';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import projectsData from './projects.json' with { type: 'json' };
 
 dotenv.config();
@@ -46,6 +48,11 @@ const PORT = process.env.PORT || 5000;
 // ອະນຸຍາດໃຫ້ Frontend ດຶງຂໍ້ມູນໄດ້
 app.use(cors());
 app.use(express.json());
+
+// ຕັ້ງຄ່າເພື່ອຮັບຮອງ Static Files (ຮູບພາບ)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use('/projects', express.static(path.join(__dirname, 'projects')));
 
 // ຕັ້ງຄ່າ Nodemailer (ແບບລະອຽດ)
 const transporter = nodemailer.createTransport({

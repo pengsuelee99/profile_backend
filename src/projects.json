@@ -11,7 +11,7 @@
     "description_en": "A comprehensive e-commerce system supporting payments and order management (Frontend: React/Tailwind, Backend: Python/Django).",
     "tags": ["React", "Tailwind", "Python", "Django"],
     "link": "#",
-    "status": "Completed (Private)",
+    "status": "Developing",
     "image": "/projects/project1.png"
   },
   {
@@ -26,7 +26,7 @@
     "description_en": "An intelligent translation website working seamlessly between React and Python Backend.",
     "tags": ["React.js", "Python", "API"],
     "link": "https://github.com/pengsuelee99",
-    "status": "Developing",
+    "status": "Coming Soon",
     "image": "/projects/project2.png"
   },
   {
@@ -41,7 +41,7 @@
     "description_en": "An intelligent chatbot developed with FastAPI and Streamlit for fast interactions.",
     "tags": ["FastAPI", "Streamlit", "Python"],
     "link": "https://github.com/pengsuelee99",
-    "status": "Coming Soon",
+    "status": "Completed",
     "image": "/projects/project3.png"
   }
 ]
