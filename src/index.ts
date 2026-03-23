@@ -14,10 +14,20 @@ const MONGODB_URI = process.env.MONGODB_URI || '';
 mongoose.connect(MONGODB_URI, {
   serverSelectionTimeoutMS: 5000, // ເພີ່ມເປັນ 5 ວິນາທີເພື່ອຄວາມແນ່ນອນ
 })
-  .then(() => console.log('ເຊື່ອມຕໍ່ຖານຂໍ້ມູນ MongoDB ສຳເລັດແລ້ວ! 🍃'))
+  .then(() => {
+    console.log('ເຊື່ອມຕໍ່ຖານຂໍ້ມູນ MongoDB ສຳເລັດແລ້ວ! 🍃');
+    // ເລີ່ມຕົ້ນ Server ຫຼັງຈາກເຊື່ອມຕໍ່ MongoDB สำເລັດ
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  })
   .catch(err => {
-    console.error('❌ ບໍ່ສາມາດເຊື່ອມຕໍ່ MongoDB ໄດ້ (ອາດຈະເປັນ IP Whitelist):');
+    console.error('❌ ບໍ່ສາມາດເຊື່ອມຕໍ່ MongoDB ໄດ້ (ອາດຈະເປັນ IP Whitelist):', err);
     console.log('💡 ລະບົບຈະໃຊ້ຂໍ້ມູນຈາກ projects.json ແທນອັດຕະໂນມັດ.');
+    // ຖ້າເຊື່ອມຕໍ່ບໍ່ໄດ້ ກໍຍັງເປີດ Server ໃຫ້ໃຊ້ JSON Fallback ໄດ້
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT} (Fallback Mode)`);
+    });
   });
 
 // ສ້າງ Schema ສຳລັບ Projects
@@ -131,9 +141,5 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// ເລີ່ມຕົ້ນ Server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
-
+// Export app ສຳລັບ Vercel
 export default app;
