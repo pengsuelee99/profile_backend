@@ -46,7 +46,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ອະນຸຍາດໃຫ້ Frontend ດຶງຂໍ້ມູນໄດ້
-app.use(cors());
+app.use(cors({
+  origin: ['https://pengsuelee99.github.io', 'http://localhost:5173'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 
 // ຕັ້ງຄ່າເພື່ອຮັບຮອງ Static Files (ຮູບພາບ)
@@ -71,6 +75,15 @@ app.get('/', (req, res) => {
 });
 
 // API ເອົາຂໍ້ມູນ Projects
+app.get('/api/status', (req, res) => {
+  const dbStatus = mongoose.connection.readyState === 1 ? 'Connected' : 'Disconnected';
+  res.json({ 
+    status: 'Server is running', 
+    database: dbStatus,
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.get('/api/projects', async (req, res) => {
   console.log("📡 GET /api/projects request received");
   
